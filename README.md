@@ -2,8 +2,6 @@
 
 ## Descrição
 
-## Descrição
-
 Este projeto tem como objetivo analisar um <!--[dataset de imagens](https://github.com/JaGuzmanT/CONCORNET2023)--> Controle de Modelo de Arquitetura IoT para o Apoio à Tomada de Decisões na carcinicultura, usando ferramentas de ASP32, Arduino e sensores de controle da água com um dashboard que entrega ao usuario um controle de completo sobre o sistema de criação.
 
 ## Funcionalidades
@@ -11,7 +9,7 @@ Este projeto tem como objetivo analisar um <!--[dataset de imagens](https://gith
 - Hadware:  ASP32, Arduino e sensores <!--descrição dos sensores-->
 - Análise do PH agua: O projeto utiliza um sensor para controle do PH enviando a informação para o datasent .
 - Referência Acadêmica: O projeto é fundamentado no artigo acadêmico <!--[Damage detection on steel-reinforced concrete produced by corrosion via YOLOv3: A detailed guide](https://www.frontiersin.org/journals/built-environment/articles/10.3389/fbuil.2023.1144606/full).-->
-## Treinando uma rede neural YOLOv5 para detecção de objetos
+<!--## Treinando uma rede neural YOLOv5 para detecção de objetos
 
 1. Coleta e Anotação de Dados:
 
@@ -121,3 +119,5 @@ Os integrantes do grupo são:
 
 Este projeto está licenciado sob a [MIT License](https://opensource.org/licenses/).
 ````
+
+-->
