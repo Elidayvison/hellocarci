@@ -1,4 +1,4 @@
-# Controle de Modelo de Arquitetura IoT para o Apoio à Tomada de Decisões na carcinicultura
+# Modelo de Arquitetura IoT para o Apoio à Tomada de Decisões na carcinicultura
 
 ## Descrição
 
