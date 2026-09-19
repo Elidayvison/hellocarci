@@ -135,7 +135,7 @@ Após injeção, o sistema aguarda tempo de estabilização (geralmente 1-2 minu
 
 ---
 
-## 🏗️ Arquitetura do Sistema
+## Arquitetura do Sistema
 
 ### Camadas da Arquitetura
 
@@ -835,7 +835,7 @@ Endpoints de webhook para integração com:
 
 ---
 
-## 💻 Firmware ESP32 - Integração com Dashboard
+## Firmware ESP32 - Integração com Dashboard
 
 ### Estrutura Geral do Código
 
@@ -1399,7 +1399,7 @@ void handleError(String errorCode, String description) {
 
 ---
 
-##  Segurança e Proteção
+## Segurança e Proteção
 
 ### Medidas Implementadas
 
@@ -1421,7 +1421,7 @@ void handleError(String errorCode, String description) {
 
 ---
 
-##  Referências Acadêmicas
+## Referências Acadêmicas
 
 O projeto é fundamentado em artigos e estudos relacionados a:
 
@@ -1494,13 +1494,13 @@ O projeto é fundamentado em artigos e estudos relacionados a:
 
 ---
 
-## 📞 Suporte e Contribuições
+## Suporte e Contribuições
 
 Para dúvidas, sugestões ou contribuições, abra uma issue ou entre em contato através do repositório GitHub.
 
 ---
 
-##  Licença
+## Licença
 
 
 
