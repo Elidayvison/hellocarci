@@ -1,4 +1,4 @@
-# HELLLOCARCI: UM modelo de Arquitetura IoT para controle do PH na Carcinicultura
+# HELLLOCARCI: Um modelo de Arquitetura IoT para controle do PH na Carcinicultura
 
 ## Resumo Executivo
 
