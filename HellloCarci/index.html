@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard de pH - Carcinicultura</title>
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+</head>
+<body>
+  <div class="app-container">
+    <!-- Cabeçalho -->
+    <header class="header">
+      <div class="header-title">
+        <div class="status-indicator" id="statusIndicator"></div>
+        <div>
+          <h1>HelloCarci</h1>
+          <p class="subtitle">Leituras de Telemetria e Qualidade da Água em Tempo Real</p>
+        </div>
+      </div>
+      <div class="badge-status" id="badgeStatus">CONECTADO</div>
+    </header>
+
+    <!-- Cartões de Telemetria -->
+    <section class="cards-grid">
+      <!-- Cartão pH -->
+      <div class="card card-primary" id="cardPh">
+        <div class="card-header">
+          <span class="card-title">pH da Água</span>
+          <span class="status-tag" id="phStatusTag">Ideal</span>
+        </div>
+        <div class="card-value-container">
+          <span class="card-value" id="phValue">8.00</span>
+          <span class="card-unit">pH</span>
+        </div>
+        <p class="card-range">Faixa segura para camarões: <strong>7.50 - 8.50</strong></p>
+      </div>
+
+      <!-- Cartão Temperatura -->
+      <div class="card">
+        <div class="card-header">
+          <span class="card-title">Temperatura</span>
+          <span class="status-tag tag-success">Normal</span>
+        </div>
+        <div class="card-value-container">
+          <span class="card-value" id="tempValue">28.5</span>
+          <span class="card-unit">°C</span>
+        </div>
+        <p class="card-range">Compensação de pH ativa via DS18B20</p>
+      </div>
+
+      <!-- Cartão Salinidade -->
+      <div class="card">
+        <div class="card-header">
+          <span class="card-title">Salinidade</span>
+          <span class="status-tag tag-success">Normal</span>
+        </div>
+        <div class="card-value-container">
+          <span class="card-value" id="salinityValue">25.0</span>
+          <span class="card-unit">ppt</span>
+        </div>
+        <p class="card-range">Alvo ideal: 15 - 30 ppt</p>
+      </div>
+
+      <!-- Cartão Oxigênio Dissolvido -->
+      <div class="card">
+        <div class="card-header">
+          <span class="card-title">Oxigênio (OD)</span>
+          <span class="status-tag tag-success">Normal</span>
+        </div>
+        <div class="card-value-container">
+          <span class="card-value" id="doValue">6.2</span>
+          <span class="card-unit">mg/L</span>
+        </div>
+        <p class="card-range">Nível mínimo: 4.0 mg/L</p>
+      </div>
+    </section>
+
+    <!-- Área Principal: Gráfico e Simulações -->
+    <section class="main-content">
+      <!-- Painel do Gráfico -->
+      <div class="panel chart-panel">
+        <div class="panel-header">
+          <h2>Histórico do pH em Tempo Real</h2>
+          <span class="info-label">Faixa Sombreada Verde = Zona Segura</span>
+        </div>
+        <div class="canvas-container">
+          <canvas id="phChart"></canvas>
+        </div>
+      </div>
+
+      <!-- Painel de Controles do Simulador -->
+      <div class="panel control-panel">
+        <h2>Simulador de Sensores / Teste</h2>
+        <p class="panel-description">Use os botões para injetar condições de teste e verificar os alertas em tempo real:</p>
+
+        <div class="button-grid">
+          <button class="btn btn-neutral" id="btnNormal">
+            Simular Condição Normal (pH 8.0)
+          </button>
+          <button class="btn btn-warning" id="btnAcid">
+            Simular Acidificação (pH 6.8)
+          </button>
+          <button class="btn btn-danger" id="btnAlkaline">
+            Simular Surto Alcalino (pH 9.1)
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Painel de Log de Alertas -->
+    <section class="panel alert-panel">
+      <h2>Log de Eventos e Alertas do Sistema</h2>
+      <ul class="alert-list" id="alertList">
+        <!-- Itens inseridos dinamicamente pelo JS -->
+      </ul>
+    </section>
+  </div>
+<script src="js/app.js"></script>
+</body>
+</html>
