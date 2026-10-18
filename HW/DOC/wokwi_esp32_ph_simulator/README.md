@@ -20,6 +20,7 @@ O potenciômetro simula a entrada analógica do PH-4502C. O pH mostrado é **ilu
 4. Adicione `ArduinoJson` no Library Manager se necessário.
 5. Inicie a simulação e abra o Serial Monitor em 115200 baud.
 6. Gire o potenciômetro virtual para variar o ADC e o pH ilustrativo.
+7. LINK PARA SIMULADOR: https://wokwi.com/projects/478237375554734081
 
 ## Integração com o backend FastAPI
 O firmware pode enviar `tank_id`, `ph`, `voltage`, `adc_raw`, `source=simulacao` e `quality=simulada` ao endpoint `/api/measurements`.
